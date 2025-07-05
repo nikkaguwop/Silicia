@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "silica-client",
+  "version": "b1.1",
+  "name": "Silica Client",
+  "description": "A powerful Minecraft utility client with advanced features",
+  "authors": [
+    "Silica Team"
+  ],
+  "contact": {
+    "homepage": "https://github.com/lvstrng/silica-client",
+    "sources": "https://github.com/lvstrng/silica-client",
+    "issues": "https://github.com/lvstrng/silica-client/issues"
+  },
+  "license": "MIT",
+  "icon": "assets/silica/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "dev.lvstrng.silica.Main"
+    ]
+  },
+  "mixins": [
+    "client.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.5",
+    "fabric": "*",
+    "minecraft": "~1.21"
+  },
+  "recommends": {
+    "sodium": "*"
+  },
+  "conflicts": {
+    "slight-gui-modifications": "*",
+    "vulkanmod": "*"
+  },
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.discord": "https://discord.gg/dCzT9XHEWu"
+      }
+    }
+  }
+}
